@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+    <title>Your Poxeet sign-in code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@500&display=swap" rel="stylesheet" />
+    <style>body, td, a, span { font-family: 'Geist','Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif; }</style>
+  </head>
+  <body style="margin:0;padding:0;background:#ffffff;font-family:'Geist','Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:400;color:#0a0a0a;-webkit-font-smoothing:antialiased;">
+    <div style="display:none;max-height:0;overflow:hidden;opacity:0;">Enter this code to sign in.</div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background:#ffffff;">
+      <tr><td align="center" style="padding:40px 24px 56px;">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:520px;">
+          <tr><td align="left" style="padding:0 0 56px;font-size:22px;line-height:28px;font-weight:500;letter-spacing:-0.04em;color:#0a0a0a;">poxeet<span style="color:#2e4be0;">.</span></td></tr>
+          <tr><td align="left" style="padding:0 0 20px;font-size:32px;line-height:40px;font-weight:500;letter-spacing:-0.035em;color:#0a0a0a;">Your sign-in code</td></tr>
+          <tr><td align="left" style="padding:0 0 20px;font-size:16px;line-height:26px;color:#52525b;">Enter this code in <span style="color:#2e4be0;">Poxeet</span> to sign in.</td></tr>
+          <tr><td align="left" style="padding:12px 0 32px;"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" bgcolor="#fafafa" style="background:#fafafa;border:1px solid #e7e7ea;border-radius:10px;border-collapse:separate;"><tr><td style="padding:20px 24px;"><span style="display:block;font-size:13px;line-height:20px;color:#71717a;">Your 6-digit code</span>
+      <span style="display:block;padding:8px 0 0;font-family:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:30px;line-height:38px;font-weight:500;letter-spacing:0.18em;color:#0a0a0a;">{{ .Token }}</span>
+      <span style="display:block;padding:8px 0 0;font-size:13px;line-height:20px;color:#71717a;">It works once and expires in an hour.</span></td></tr></table></td></tr>
+          <tr><td align="left" style="padding:0 0 20px;font-size:16px;line-height:26px;color:#52525b;">If you didn&#39;t try to sign in, ignore this email. Your account is safe.</td></tr>
+          <tr><td style="padding:40px 0 0;"><div style="border-top:1px solid #ececef;height:1px;line-height:1px;font-size:1px;">&nbsp;</div></td></tr>
+          <tr><td align="left" style="padding:32px 0 0;font-size:16px;line-height:22px;font-weight:500;letter-spacing:-0.04em;color:#0a0a0a;">poxeet<span style="color:#2e4be0;">.</span></td></tr>
+          <tr><td align="left" style="padding:16px 0 0;font-size:13px;line-height:21px;color:#71717a;">Poxeet sent this email to {{ .Email }}. We&#39;ll never ask for your password or codes over email, chat or phone.</td></tr>
+        </table>
+      </td></tr>
+    </table>
+  </body>
+</html>

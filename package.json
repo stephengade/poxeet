@@ -1,0 +1,48 @@
+{
+  "name": "autopilot",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "tokens:build": "node scripts/generate-design-tokens.mjs",
+    "logo:build": "node scripts/generate-logo-svgs.mjs",
+    "test": "vitest run",
+    "test:db": "node scripts/test-db.mjs",
+    "invite": "tsx --env-file=.env scripts/invite.ts",
+    "admin:create": "tsx --env-file=.env scripts/admin-create.ts",
+    "packs": "tsx --env-file=.env scripts/packs.ts",
+    "email:test": "tsx --env-file=.env scripts/email-test.ts",
+    "email:supabase-templates": "tsx scripts/email-supabase-templates.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.134.0",
+    "@hookform/resolvers": "^5.9.1",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.3",
+    "next": "16.4.0",
+    "openai": "^7.34.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-hook-form": "^7.90.0",
+    "simple-icons": "15.22.0",
+    "sonner": "^2.0.8",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^16.4.0",
+    "opentype.js": "1.3.4",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "3.2.4"
+  }
+}

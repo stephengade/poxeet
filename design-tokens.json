@@ -1,0 +1,809 @@
+{
+  "$comment": "Source of truth for Poxeet design tokens. Same shape as the Poxeet design system artifact. Edit here, then run pnpm tokens:build.",
+  "name": "Poxeet",
+  "version": 1,
+  "color": {
+    "themes": [
+      {
+        "id": "light",
+        "name": "Light"
+      },
+      {
+        "id": "dark",
+        "name": "Dark"
+      }
+    ],
+    "tokens": [
+      {
+        "name": "canvas",
+        "value": {
+          "light": "#f6f7f9",
+          "dark": "#0b0d12"
+        },
+        "usage": "Page background in the app and below the marketing hero."
+      },
+      {
+        "name": "surface",
+        "value": {
+          "light": "#ffffff",
+          "dark": "#12151c"
+        },
+        "usage": "Cards, panels, inputs, the calendar grid and the post preview."
+      },
+      {
+        "name": "surface-muted",
+        "value": {
+          "light": "#eef0f4",
+          "dark": "#1a1e27"
+        },
+        "usage": "Quiet fills: draft chips, skeletons, table headers, the inactive half of a segmented control."
+      },
+      {
+        "name": "line",
+        "value": {
+          "light": "#e2e5eb",
+          "dark": "#262b36"
+        },
+        "usage": "Hairlines between rows and around cards. Decorative only; never the only boundary of a control."
+      },
+      {
+        "name": "line-strong",
+        "value": {
+          "light": "#828b9b",
+          "dark": "#5f687b"
+        },
+        "usage": "Borders of inputs, selects, switches and secondary buttons (3:1 on surface and canvas in both themes)."
+      },
+      {
+        "name": "ink",
+        "value": {
+          "light": "#0d1117",
+          "dark": "#edeff3"
+        },
+        "usage": "Headlines and body text on canvas, surface, surface-muted and both washes."
+      },
+      {
+        "name": "ink-muted",
+        "value": {
+          "light": "#596171",
+          "dark": "#9aa3b4"
+        },
+        "usage": "Secondary text, metadata, captions and placeholders on canvas, surface, surface-muted and both washes (4.5:1 or more everywhere)."
+      },
+      {
+        "name": "action",
+        "value": {
+          "light": "#2e4be0",
+          "dark": "#8a9dff"
+        },
+        "usage": "Fill of the primary button: Poxeet cobalt, the one main action on a screen."
+      },
+      {
+        "name": "action-hover",
+        "value": {
+          "light": "#2239b8",
+          "dark": "#a9b7ff"
+        },
+        "usage": "Primary button fill on hover and press."
+      },
+      {
+        "name": "on-action",
+        "value": {
+          "light": "#ffffff",
+          "dark": "#0b0d12"
+        },
+        "usage": "Label and icon on an action fill."
+      },
+      {
+        "name": "brand",
+        "value": {
+          "light": "#2e4be0",
+          "dark": "#8a9dff"
+        },
+        "usage": "Poxeet cobalt: links, the Approved status, selected days, the focus ring, the brand button. As text on canvas, surface, surface-muted and brand-soft."
+      },
+      {
+        "name": "brand-hover",
+        "value": {
+          "light": "#2239b8",
+          "dark": "#a9b7ff"
+        },
+        "usage": "Brand button fill and link color on hover."
+      },
+      {
+        "name": "brand-soft",
+        "value": {
+          "light": "#eaeeff",
+          "dark": "#1b2250"
+        },
+        "usage": "Tinted ground behind brand text: the Approved badge, today's cell, eyebrow pills."
+      },
+      {
+        "name": "on-brand",
+        "value": {
+          "light": "#ffffff",
+          "dark": "#0b0d12"
+        },
+        "usage": "Label on a brand fill. Dark text in the dark theme because the dark brand is light."
+      },
+      {
+        "name": "success",
+        "value": {
+          "light": "#157a4b",
+          "dark": "#4fcb8f"
+        },
+        "usage": "Posted status and connected states. As text on the surfaces and success-soft; always paired with the double-check icon and a word."
+      },
+      {
+        "name": "success-soft",
+        "value": {
+          "light": "#e3f5ec",
+          "dark": "#0f2a1e"
+        },
+        "usage": "Ground of the Posted badge and success banners."
+      },
+      {
+        "name": "warning",
+        "value": {
+          "light": "#94570a",
+          "dark": "#f0b556"
+        },
+        "usage": "Needs check, missed, token expiring. As text on the surfaces and warning-soft; always with the clock or alert icon and a word."
+      },
+      {
+        "name": "warning-soft",
+        "value": {
+          "light": "#fdf1dc",
+          "dark": "#2e2108"
+        },
+        "usage": "Ground of warning badges and banners."
+      },
+      {
+        "name": "danger",
+        "value": {
+          "light": "#c0312a",
+          "dark": "#ff7a6e"
+        },
+        "usage": "Failed status, destructive buttons, field errors, the over-limit counter. As text on the surfaces and danger-soft; always with the alert icon and a word."
+      },
+      {
+        "name": "danger-soft",
+        "value": {
+          "light": "#fce8e6",
+          "dark": "#35140f"
+        },
+        "usage": "Ground of the Failed badge, critical banners and the destructive button's hover."
+      },
+      {
+        "name": "wash-cool",
+        "value": {
+          "light": "#dde4ff",
+          "dark": "#161d42"
+        },
+        "usage": "Cool stop of the showroom glow behind the hero and the closing call to action. Ink and ink-muted read on it. Never inside the app."
+      },
+      {
+        "name": "wash-warm",
+        "value": {
+          "light": "#ffe8d9",
+          "dark": "#2b1b14"
+        },
+        "usage": "Warm stop of the showroom glow. Ink and ink-muted read on it. Never inside the app."
+      },
+      {
+        "name": "overlay",
+        "value": {
+          "light": "rgba(13, 17, 23, 0.40)",
+          "dark": "rgba(0, 0, 0, 0.60)"
+        },
+        "usage": "Scrim behind the modal and the day panel on phones."
+      },
+      {
+        "name": "focus",
+        "value": "{brand}",
+        "usage": "Keyboard focus ring color, an alias of brand (3:1 or more on every surface)."
+      },
+      {
+        "name": "paper",
+        "value": "#f7f6f3",
+        "usage": "Workroom page ground: a warm off-white, not grey. Workroom only (the signed-in app is light only, so one value serves both themes)."
+      },
+      {
+        "name": "sand",
+        "value": "#efede8",
+        "usage": "Workroom quiet fills: inactive segments, chips, table heads, skeletons."
+      },
+      {
+        "name": "hairline",
+        "value": "#e9e6e0",
+        "usage": "Workroom hairlines between rows and inside cards. Decorative only."
+      },
+      {
+        "name": "stone",
+        "value": "#8f897f",
+        "usage": "Workroom control borders and the faintest icons (3.4:1 on surface)."
+      },
+      {
+        "name": "graphite",
+        "value": "#1b1a17",
+        "usage": "Workroom ink and the fill of its primary button: a warm near-black."
+      },
+      {
+        "name": "graphite-hover",
+        "value": "#34322d",
+        "usage": "Workroom primary button on hover."
+      },
+      {
+        "name": "graphite-muted",
+        "value": "#6b665e",
+        "usage": "Workroom secondary text, metadata and captions (5.2:1 on paper, 5.7:1 on surface)."
+      },
+      {
+        "name": "iris",
+        "value": "#5b4ae6",
+        "usage": "Workroom accent: selection, today, Approve, links, focus, the selected day's posts (5.9:1 with white)."
+      },
+      {
+        "name": "iris-hover",
+        "value": "#4a39cf",
+        "usage": "Iris on hover and as text on iris-soft."
+      },
+      {
+        "name": "iris-soft",
+        "value": "#efecfe",
+        "usage": "Tinted ground behind iris text: Approved tags, the current nav item's icon tile, selected rows."
+      },
+      {
+        "name": "iris-wash",
+        "value": "#f4f2fc",
+        "usage": "The lavender ground of the calendar board and the job panel."
+      },
+      {
+        "name": "iris-line",
+        "value": "#e2ddf8",
+        "usage": "Hairlines on iris-wash."
+      },
+      {
+        "name": "tone-0",
+        "value": "#e6dcfb",
+        "usage": "Pillar tone 0, lilac: the light tint (legend chips, badges, tinted grounds). Text: tone-0-ink."
+      },
+      {
+        "name": "tone-0-ink",
+        "value": "#2a1863",
+        "usage": "Text on tone-0 and on tints between it and the solid (11.4:1 on the tint)."
+      },
+      {
+        "name": "tone-0-solid",
+        "value": "#5b4ae6",
+        "usage": "Pillar tone 0, lilac, at full strength: approved and selected posts, bold blocks. Text: tone-0-on."
+      },
+      {
+        "name": "tone-0-on",
+        "value": "#ffffff",
+        "usage": "Text and icons on tone-0-solid (5.9:1)."
+      },
+      {
+        "name": "tone-1",
+        "value": "#ffe0bf",
+        "usage": "Pillar tone 1, orange: the light tint (legend chips, badges, tinted grounds). Text: tone-1-ink."
+      },
+      {
+        "name": "tone-1-ink",
+        "value": "#5a2600",
+        "usage": "Text on tone-1 and on tints between it and the solid (9.7:1 on the tint)."
+      },
+      {
+        "name": "tone-1-solid",
+        "value": "#fa8c1e",
+        "usage": "Pillar tone 1, orange, at full strength: approved and selected posts, bold blocks. Text: tone-1-on."
+      },
+      {
+        "name": "tone-1-on",
+        "value": "#3a1500",
+        "usage": "Text and icons on tone-1-solid (6.9:1)."
+      },
+      {
+        "name": "tone-2",
+        "value": "#cdf2fa",
+        "usage": "Pillar tone 2, cyan: the light tint (legend chips, badges, tinted grounds). Text: tone-2-ink."
+      },
+      {
+        "name": "tone-2-ink",
+        "value": "#00414f",
+        "usage": "Text on tone-2 and on tints between it and the solid (9.5:1 on the tint)."
+      },
+      {
+        "name": "tone-2-solid",
+        "value": "#3dd0ee",
+        "usage": "Pillar tone 2, cyan, at full strength: approved and selected posts, bold blocks. Text: tone-2-on."
+      },
+      {
+        "name": "tone-2-on",
+        "value": "#00323d",
+        "usage": "Text and icons on tone-2-solid (7.5:1)."
+      },
+      {
+        "name": "tone-3",
+        "value": "#fdf0c2",
+        "usage": "Pillar tone 3, yellow: the light tint (legend chips, badges, tinted grounds). Text: tone-3-ink."
+      },
+      {
+        "name": "tone-3-ink",
+        "value": "#4d3500",
+        "usage": "Text on tone-3 and on tints between it and the solid (10.1:1 on the tint)."
+      },
+      {
+        "name": "tone-3-solid",
+        "value": "#f8d24a",
+        "usage": "Pillar tone 3, yellow, at full strength: approved and selected posts, bold blocks. Text: tone-3-on."
+      },
+      {
+        "name": "tone-3-on",
+        "value": "#3d2a00",
+        "usage": "Text and icons on tone-3-solid (9.4:1)."
+      },
+      {
+        "name": "tone-4",
+        "value": "#e6f5b5",
+        "usage": "Pillar tone 4, lime: the light tint (legend chips, badges, tinted grounds). Text: tone-4-ink."
+      },
+      {
+        "name": "tone-4-ink",
+        "value": "#2f4200",
+        "usage": "Text on tone-4 and on tints between it and the solid (9.5:1 on the tint)."
+      },
+      {
+        "name": "tone-4-solid",
+        "value": "#b4dc19",
+        "usage": "Pillar tone 4, lime, at full strength: approved and selected posts, bold blocks. Text: tone-4-on."
+      },
+      {
+        "name": "tone-4-on",
+        "value": "#243300",
+        "usage": "Text and icons on tone-4-solid (8.5:1)."
+      },
+      {
+        "name": "tone-5",
+        "value": "#f4d3e2",
+        "usage": "Pillar tone 5, plum: the light tint (legend chips, badges, tinted grounds). Text: tone-5-ink."
+      },
+      {
+        "name": "tone-5-ink",
+        "value": "#6b1340",
+        "usage": "Text on tone-5 and on tints between it and the solid (8.5:1 on the tint)."
+      },
+      {
+        "name": "tone-5-solid",
+        "value": "#8c1f55",
+        "usage": "Pillar tone 5, plum, at full strength: approved and selected posts, bold blocks. Text: tone-5-on."
+      },
+      {
+        "name": "tone-5-on",
+        "value": "#ffffff",
+        "usage": "Text and icons on tone-5-solid (8.6:1)."
+      }
+    ]
+  },
+  "type": {
+    "fonts": [],
+    "families": {
+      "sans": "\"Geist\", ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+      "serif": "\"Instrument Serif\", \"Iowan Old Style\", Georgia, serif",
+      "mono": "\"Geist Mono\", ui-monospace, \"SF Mono\", Menlo, monospace"
+    },
+    "groups": [
+      {
+        "name": "Display",
+        "family": "sans",
+        "note": "Marketing and page titles. Medium weight with tight tracking; size carries the emphasis.",
+        "styles": [
+          {
+            "name": "display-xl",
+            "fontSize": "76px",
+            "lineHeight": "76px",
+            "fontWeight": 500,
+            "letterSpacing": "-0.04em",
+            "sample": "Stay visible on LinkedIn without living on it.",
+            "usage": "Landing hero headline only. Drops to display-lg below 768px."
+          },
+          {
+            "name": "display-lg",
+            "fontSize": "56px",
+            "lineHeight": "60px",
+            "fontWeight": 500,
+            "letterSpacing": "-0.035em",
+            "sample": "A month of posts that sound like you.",
+            "usage": "Marketing section headlines and the hero on tablets."
+          },
+          {
+            "name": "display-md",
+            "fontSize": "40px",
+            "lineHeight": "46px",
+            "fontWeight": 500,
+            "letterSpacing": "-0.03em",
+            "sample": "You approve every post.",
+            "usage": "Smaller marketing headings, the sign-in title, the hero on phones."
+          }
+        ]
+      },
+      {
+        "name": "Voice",
+        "family": "serif",
+        "note": "The human voice. One italic word or short phrase inside a display headline, never a whole line, never in the app.",
+        "styles": [
+          {
+            "name": "voice-xl",
+            "fontSize": "80px",
+            "lineHeight": "76px",
+            "fontWeight": 400,
+            "fontStyle": "italic",
+            "letterSpacing": "-0.01em",
+            "sample": "sound like you",
+            "usage": "The accented phrase inside a display-xl headline (set 4px larger to match the sans x-height)."
+          },
+          {
+            "name": "voice-lg",
+            "fontSize": "60px",
+            "lineHeight": "60px",
+            "fontWeight": 400,
+            "fontStyle": "italic",
+            "letterSpacing": "-0.01em",
+            "sample": "in your voice",
+            "usage": "The accented phrase inside a display-lg or display-md headline."
+          }
+        ]
+      },
+      {
+        "name": "Text",
+        "family": "sans",
+        "note": "The app's working scale. Medium (500) for headings and labels, regular for text. At most three styles per section.",
+        "styles": [
+          {
+            "name": "heading-lg",
+            "fontSize": "28px",
+            "lineHeight": "36px",
+            "fontWeight": 500,
+            "letterSpacing": "-0.02em",
+            "sample": "October 2026",
+            "usage": "App page titles and the calendar month."
+          },
+          {
+            "name": "heading-md",
+            "fontSize": "20px",
+            "lineHeight": "28px",
+            "fontWeight": 500,
+            "letterSpacing": "-0.015em",
+            "sample": "Wednesday, 14 October",
+            "usage": "Panel, card and modal titles."
+          },
+          {
+            "name": "heading-sm",
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": 500,
+            "sample": "Connect LinkedIn",
+            "usage": "Small headings, stepper titles, banner titles.",
+            "letterSpacing": "-0.01em"
+          },
+          {
+            "name": "body-lg",
+            "fontSize": "18px",
+            "lineHeight": "30px",
+            "fontWeight": 400,
+            "sample": "Poxeet learns how you write, plans a month of posts and publishes the ones you approve.",
+            "usage": "Marketing lead paragraphs under a display headline.",
+            "letterSpacing": "-0.005em"
+          },
+          {
+            "name": "body",
+            "fontSize": "15px",
+            "lineHeight": "25px",
+            "fontWeight": 400,
+            "sample": "Most people never post because the blank box wins. Start with one honest sentence.",
+            "usage": "Default text, post text in the editor and preview."
+          },
+          {
+            "name": "body-sm",
+            "fontSize": "13px",
+            "lineHeight": "20px",
+            "fontWeight": 400,
+            "sample": "Draft · Career lessons · Story",
+            "usage": "Metadata, hints, table cells, calendar chips."
+          },
+          {
+            "name": "label",
+            "fontSize": "13px",
+            "lineHeight": "16px",
+            "fontWeight": 500,
+            "sample": "Posting times",
+            "usage": "Form labels, buttons at size sm, badges, tabs."
+          },
+          {
+            "name": "eyebrow",
+            "fontSize": "12px",
+            "lineHeight": "16px",
+            "fontWeight": 500,
+            "letterSpacing": "0.08em",
+            "sample": "OPEN SOURCE · SELF-HOSTABLE",
+            "usage": "Uppercase section kickers and the eyebrow pill. Always set in capitals."
+          }
+        ]
+      },
+      {
+        "name": "Data",
+        "family": "mono",
+        "note": "Numbers that line up: times, counts, key fragments.",
+        "styles": [
+          {
+            "name": "mono",
+            "fontSize": "13px",
+            "lineHeight": "20px",
+            "fontWeight": 400,
+            "sample": "09:00 · 2,184 / 3,000",
+            "usage": "Posting times, the character counter, the last four characters of a key."
+          },
+          {
+            "name": "mono-sm",
+            "fontSize": "11px",
+            "lineHeight": "16px",
+            "fontWeight": 500,
+            "sample": "09:00",
+            "usage": "Times inside calendar chips."
+          }
+        ]
+      }
+    ]
+  },
+  "spacing": {
+    "note": "4px base. Sections breathe; controls stay tight.",
+    "tokens": [
+      {
+        "name": "space-1",
+        "value": "4px",
+        "usage": "Icon to label inside badges and chips."
+      },
+      {
+        "name": "space-2",
+        "value": "8px",
+        "usage": "Icon to label in buttons; gap between chips."
+      },
+      {
+        "name": "space-3",
+        "value": "12px",
+        "usage": "Label to field; between related rows."
+      },
+      {
+        "name": "space-4",
+        "value": "16px",
+        "usage": "Card padding on phones; the page gutter on phones."
+      },
+      {
+        "name": "space-5",
+        "value": "20px",
+        "usage": "Button horizontal padding at size md."
+      },
+      {
+        "name": "space-6",
+        "value": "24px",
+        "usage": "Card and panel padding; gap between cards."
+      },
+      {
+        "name": "space-8",
+        "value": "32px",
+        "usage": "Gap between groups inside a page; the page gutter on desktop."
+      },
+      {
+        "name": "space-12",
+        "value": "48px",
+        "usage": "Between page sections in the app."
+      },
+      {
+        "name": "space-16",
+        "value": "64px",
+        "usage": "Headline to product shot in the hero."
+      },
+      {
+        "name": "space-24",
+        "value": "96px",
+        "usage": "Between marketing sections on phones."
+      },
+      {
+        "name": "space-32",
+        "value": "128px",
+        "usage": "Between marketing sections on desktop."
+      }
+    ]
+  },
+  "radius": {
+    "note": "Soft and generous. Actions are pills; containers are rounded rectangles that grow with their size.",
+    "tokens": [
+      {
+        "name": "radius-xs",
+        "value": "6px",
+        "usage": "Calendar chips, keyboard keys, small tags."
+      },
+      {
+        "name": "radius-sm",
+        "value": "10px",
+        "usage": "Inputs, selects, textareas, calendar day cells."
+      },
+      {
+        "name": "radius-md",
+        "value": "14px",
+        "usage": "Cards, banners, toasts, menus."
+      },
+      {
+        "name": "radius-lg",
+        "value": "20px",
+        "usage": "Panels, the modal, the calendar frame, feature cards."
+      },
+      {
+        "name": "radius-xl",
+        "value": "28px",
+        "usage": "Product shots and the hero frame on the landing page."
+      },
+      {
+        "name": "radius-2xl",
+        "value": "32px",
+        "usage": "The calendar board frame and the selected-day panel in the workroom."
+      },
+      {
+        "name": "radius-full",
+        "value": "9999px",
+        "usage": "Buttons, badges, the eyebrow, switches, avatars."
+      }
+    ]
+  },
+  "size": {
+    "note": "Layout and control dimensions.",
+    "tokens": [
+      {
+        "name": "control-sm",
+        "value": "32px",
+        "usage": "Height of small buttons and segmented controls."
+      },
+      {
+        "name": "control-md",
+        "value": "40px",
+        "usage": "Height of default buttons, inputs and selects."
+      },
+      {
+        "name": "control-lg",
+        "value": "48px",
+        "usage": "Height of hero buttons. Also the minimum touch target on phones."
+      },
+      {
+        "name": "content-max",
+        "value": "1120px",
+        "usage": "Max width of page content."
+      },
+      {
+        "name": "reading-max",
+        "value": "680px",
+        "usage": "Max width of post text and long copy."
+      }
+    ]
+  },
+  "shadow": {
+    "note": "Shadows mean floating. Resting cards use a hairline, not a shadow.",
+    "tokens": [
+      {
+        "name": "shadow-sm",
+        "value": {
+          "light": "0 1px 2px rgba(13, 17, 23, 0.06)",
+          "dark": "0 1px 2px rgba(0, 0, 0, 0.5)"
+        },
+        "usage": "Buttons and inputs at rest, the switch thumb."
+      },
+      {
+        "name": "shadow-md",
+        "value": {
+          "light": "0 4px 12px -2px rgba(13, 17, 23, 0.08), 0 2px 4px rgba(13, 17, 23, 0.04)",
+          "dark": "0 8px 20px -4px rgba(0, 0, 0, 0.6)"
+        },
+        "usage": "Menus, popovers, the toast, calendar chips while dragged."
+      },
+      {
+        "name": "shadow-lg",
+        "value": {
+          "light": "0 32px 64px -24px rgba(13, 17, 23, 0.22), 0 12px 24px -12px rgba(13, 17, 23, 0.10)",
+          "dark": "0 32px 64px -24px rgba(0, 0, 0, 0.8)"
+        },
+        "usage": "The modal, the day panel, product shots floating over the hero wash."
+      },
+      {
+        "name": "focus-ring",
+        "value": {
+          "light": "0 0 0 2px #f6f7f9, 0 0 0 4px #2e4be0",
+          "dark": "0 0 0 2px #0b0d12, 0 0 0 4px #8a9dff"
+        },
+        "usage": "Keyboard focus: a 2px canvas gap, then 2px of solid brand, following the element's radius."
+      },
+      {
+        "name": "shadow-card",
+        "value": {
+          "light": "0 0 0 1px rgba(27, 26, 23, 0.05), 0 1px 2px rgba(27, 26, 23, 0.04), 0 4px 12px -6px rgba(27, 26, 23, 0.06)",
+          "dark": "0 0 0 1px rgba(255, 255, 255, 0.06)"
+        },
+        "usage": "Workroom cards at rest: a whisper of edge and lift instead of a grey hairline."
+      },
+      {
+        "name": "shadow-raised",
+        "value": {
+          "light": "0 0 0 1px rgba(27, 26, 23, 0.05), 0 2px 4px rgba(27, 26, 23, 0.04), 0 16px 32px -16px rgba(27, 26, 23, 0.16)",
+          "dark": "0 16px 32px -16px rgba(0, 0, 0, 0.7)"
+        },
+        "usage": "Workroom cards on hover, popovers and the reschedule picker."
+      },
+      {
+        "name": "shadow-float",
+        "value": {
+          "light": "0 0 0 1px rgba(42, 31, 110, 0.05), 0 4px 10px rgba(42, 31, 110, 0.05), 0 40px 72px -28px rgba(42, 31, 110, 0.30)",
+          "dark": "0 40px 72px -28px rgba(0, 0, 0, 0.8)"
+        },
+        "usage": "The calendar's selected-day panel, sheets and the modal: lifted off the lavender board."
+      }
+    ]
+  },
+  "motion": {
+    "note": "Short and functional. Everything is instant under prefers-reduced-motion.",
+    "tokens": [
+      {
+        "name": "duration-fast",
+        "value": "120ms",
+        "usage": "Hover, press and color changes."
+      },
+      {
+        "name": "duration-base",
+        "value": "200ms",
+        "usage": "Switches, tabs, panels appearing."
+      },
+      {
+        "name": "duration-slow",
+        "value": "320ms",
+        "usage": "The day panel sliding in. The maximum."
+      },
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.2, 0, 0, 1)",
+        "usage": "Every transition."
+      },
+      {
+        "name": "duration-enter",
+        "value": "260ms",
+        "usage": "Sheets and panels arriving."
+      },
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "usage": "Things arriving: sheets, the day panel, cards lifting on hover."
+      }
+    ]
+  },
+  "breakpoint": {
+    "note": "Mobile first. Layouts work from 360px.",
+    "tokens": [
+      {
+        "name": "bp-sm",
+        "value": "640px",
+        "usage": "Large phones."
+      },
+      {
+        "name": "bp-md",
+        "value": "768px",
+        "usage": "Tablets: display-xl drops to display-lg below this."
+      },
+      {
+        "name": "bp-lg",
+        "value": "1024px",
+        "usage": "Desktop: the day panel becomes a side drawer."
+      },
+      {
+        "name": "bp-xl",
+        "value": "1280px",
+        "usage": "Wide desktop."
+      }
+    ]
+  }
+}
